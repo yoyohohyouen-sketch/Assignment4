@@ -203,6 +203,7 @@ function updateItemQuantity(productId, delta) {
     }
     
     renderCartSidebar();
+    saveCartToLocalStorage();
 }
 
 // remove item
@@ -212,6 +213,7 @@ function removeCartItem(productId) {
         cart = cart.filter(item => item.id !== productId);
         showToast(`❌ Removed ${item.name}`);
         renderCartSidebar();
+        saveCartToLocalStorage();
     }
 }
 
@@ -234,6 +236,7 @@ function addToCart(product) {
     }
     
     renderCartSidebar();
+    saveCartToLocalStorage();
 }
 
 // Bind all Buy buttons
@@ -631,6 +634,30 @@ function showToastMessage(message, type = 'success') {
     }, 2500);
 }
 
+// Local Storage Function
+
+// able to store the cart use Local Storage
+function saveCartToLocalStorage() {
+    localStorage.setItem('rabbitCart', JSON.stringify(cart));
+}
+
+
+function loadCartFromLocalStorage() {
+    const savedCart = localStorage.getItem('rabbitCart');
+    if (savedCart) {
+        cart = JSON.parse(savedCart);
+        renderCartSidebar();
+    }
+}
+
+// clear the cart
+function clearCart() {
+    cart = [];
+    saveCartToLocalStorage();
+    renderCartSidebar();
+    showToast('🛒 Shopping cart has been emptied');
+}
+
 
 // set default
 function initCart() {
@@ -641,6 +668,7 @@ function initCart() {
     bindViewButtons();
     bindCartFloatEvent();
     bindOutsideClick();
+    saveCartToLocalStorage();
     renderCartSidebar();
 }
 
