@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabbit's Home</title>
+
+    <link rel="stylesheet" href="css\style.css">
+    <script src="external.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/dffaab0999.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Bungee&family=Dancing+Script:wght@400..700&family=Gravitas+One&family=Playwrite+NZ+Basic:wght@100..400&family=Roboto+Slab:wght@100..900&family=Rubik+Storm&family=Yuji+Boku&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="header">
+        <div class="container" id="fontstyle"> 
+            <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom"> 
+                <div class="col-md-3 mb-2 mb-md-0"> 
+                    <a class="navbar-brand" href="#" id="headerword">RABBIT'S HOME</a>
+                </div> 
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0" > 
+                    <li><a href="#home" class="nav-link px-3" id="headerchoose">Home</a></li> 
+                    <li><a href="#product" class="nav-link px-3" id="headerchoose">Product</a></li> 
+                    <li><a href="#faqs" class="nav-link px-3" id="headerchoose">FAQs</a></li> 
+                </ul> 
+                <div class="col-md-3 text-end"> 
+                    <button type="button" class="btn me-2" id="btncolor">Login</button> 
+                    <button type="button" class="btn" id="btncolor">Sign-up</button> 
+                </div> 
+            </header> 
+        </div>
+    </section>
+    <section id="Album">
+        <div class="container" id="home">
+            <div id="carouselExampleIndicators" class="carousel slide album-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="image\pic1.jpeg" alt="pic1.jpeg" id="albumpic">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="image\pic2.PNG" alt="pic2.PNG" id="albumpic">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="image\pic3.jpeg" alt="pic3.jpeg" id="albumpic">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>     
+        <main>
+            <section class="py-5 text-center container"> 
+                <div class="row py-lg-5"> 
+                    <div class="col-lg-6 col-md-8 mx-auto" id="titlefont"> 
+                        <h1 class="fw-light" style="color: blueviolet;">Rabbit's home🐰</h1> 
+                        <p class="lead text-body-secondary">
+                            Welcome to our rabbit shop. We sell healthy and active rabbits for pets or small farming. 
+                            Our rabbits are raised in a clean place and given good food every day to make sure they 
+                            grow well and stay strong. We care about their health and make sure they are friendly and 
+                            easy to handle. We also give simple advice on how to feed and take care of your rabbit. 
+                            Whether you are buying your first rabbit or adding more to your farm, we are happy to help 
+                            you choose the right one at a good price.
+                        </p> 
+                    </div> 
+                </div> 
+            </section> 
+            <div class="album py-5" id="albumbody"> 
+                <div class="container" id="product"> 
+                    <h1 id="pricingh1">🐇 Product 🐇</h1>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\whiterabbit.jpeg" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body"> 
+                                    <h4 id="h4font">White Dwarf Rabbit</h4>
+                                    <p class="card-text">
+                                        This fluffy white Dwarf bunny is super friendly and loves to be held. Great with kids and always ready for cuddles!
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 450</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\greyrabbit1.avif" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body">
+                                    <h4 id="h4font">Grey Angora Rabbit</h4>                                     
+                                    <p class="card-text">
+                                        This little grey Angora bunny is full of energy and personality. He loves to hop around and play. Very active and fun!
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 440</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\creamrabbit1.jpg" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body">
+                                    <h4 id="h4font">Cream Lop Rabbit</h4>                                     
+                                    <p class="card-text">
+                                        This sweet cream Lop bunny is gentle and calm. Perfect for first-time owners. Loves quiet cuddles and attention.
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 360</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\greyrabbit.jpg" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body"> 
+                                    <h4 id="h4font">Grey Dwarf Rabbit</h4>                                           
+                                    <p class="card-text">
+                                        This fluffy grey Dwarf bunny is super friendly and loves to be held. Great with kids and always ready for cuddles!
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 450</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\whiterabbit1.jpg" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body">
+                                    <h4 id="h4font">White Angora Rabbit</h4>                                            
+                                    <p class="card-text">
+                                        This playful white Angora bunny is small and cute. Very active and loves to explore. Perfect for someone who wants an energetic pet!
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 320</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\whiterabbit2.webp" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body">
+                                    <h4 id="h4font">Grey Lop Rabbit</h4>                                            
+                                    <p class="card-text">
+                                        This sweet grey Lop bunny is calm and gentle. Loves quiet time and gentle pets. Ideal for first-time owners or relaxing days.
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 420</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\creamrabbit.jpeg" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body">
+                                    <h4 id="h4font">Cream Dwarf Rabbit</h4>                                            
+                                    <p class="card-text">
+                                        This friendly cream Dwarf bunny loves attention and cuddles. Great with kids and very gentle. A perfect family pet!
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 450</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\wncrabbit.jpeg"  class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body">
+                                    <h4 id="h4font">White Angora Rabbit</h4>                                            
+                                    <p class="card-text">
+                                        This cute white Angora bunny is playful and curious. Loves to hop around and explore. Full of energy and fun!
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 400</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                        <div class="col"> 
+                            <div class="card shadow-sm" style="overflow: hidden;"> 
+                                <img src="image\greyrabbit2.jpg" class="card-img-top" height="425" style="object-fit: cover; transition: transform 0.3s ease;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+                                <div class="card-body">
+                                    <h4 id="h4font">Black Lop Rabbit</h4>                                           
+                                    <p class="card-text">
+                                        This sweet black Lop bunny is calm and loving. Enjoys quiet cuddles and sitting on your lap. Perfect for relaxing days!
+                                    </p> 
+                                    <div class="d-flex justify-content-between align-items-center"> 
+                                        <div class="btn-group"> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">View</button> 
+                                            <button type="button" class="btn btn-sm" id="albumbtn">Buy</button> 
+                                        </div> 
+                                        <small class="text-body-secondary">RM 350</small> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+        </main>
+    </section>
+    <section id="faqs">
+        <div class="container px-4 py-5" id="faqfont"> 
+            <h2 id="faqh2">Frequently Asked Questions (FAQs)</h2>
+            <hr>
+            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3"> 
+                <div class="col d-flex align-items-start"> 
+                    <div class="fs-4 flex-shrink-0 me-3"> 
+                        <i class="fa-solid fa-bag-shopping fa-2xl" style="color: rgb(177, 151, 252);"></i>
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2" id="faqh3">Why buy from rabbit's home?</h3> 
+                        <p class="lead text-body-secondary" style="padding-top: 14%;" id="faqp">
+                            Our rabbits are healthier and handled with love every day. Big stores get rabbits from large factories; 
+                            we raise ours at home so they are friendlier and less stressed.
+                        </p> 
+                    </div> 
+                </div> 
+                <div class="col d-flex align-items-start" > 
+                    <div class="fs-4 flex-shrink-0 me-3"> 
+                        <i class="fa-solid fa-headset fa-2xl" style="color: rgb(177, 151, 252);"></i>
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2" id="faqh3">Do Rabbit's home help customers after they buy a rabbit?</h3> 
+                        <p class="lead text-body-secondary" style="padding-top: 2%;" id="faqp">
+                            Yes! We are always here to answer your questions. Whether you need advice on food, cages, or litter training.
+                        </p>  
+                    </div> 
+                </div> 
+                <div class="col d-flex align-items-start"> 
+                    <div class="fs-4 flex-shrink-0 me-3"> 
+                        <i class="fa-solid fa-syringe fa-2xl" style="color: rgb(177, 151, 252);"></i>
+                    </div> 
+                    <div> 
+                        <h3 class="fs-2" id="faqh3">Are Rabbit's home rabbits healthy?</h3> 
+                        <p class="lead text-body-secondary"  style="padding-top: 14%;" id="faqp">
+                            Yes. All our rabbits are checked by a vet, vaccinated, and come with a health guarantee. 
+                        </p> 
+                    </div> 
+                </div> 
+            </div> 
+        </div>
+    </section>
+    <section id="footers">
+        <div class="container"> 
+            <footer class="py-3 my-4">
+                <hr> 
+                <p class="text-center" style="color: blueviolet;">© 2026 Rabbit's home, Penang</p> 
+            </footer> 
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
