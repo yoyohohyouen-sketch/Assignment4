@@ -70,6 +70,7 @@ function initDOMElements() {
                         <span>Total Price</span>
                         <span id="cartTotalAmount">RM 0.00</span>
                     </div>
+                    <button id="paymentBtn" class="payment-btn-purple">💳 Payment</button>
                 </div>
             </div>
             <div id="addToast" class="toast-feedback">+1 Added to cart 🐰</div>
